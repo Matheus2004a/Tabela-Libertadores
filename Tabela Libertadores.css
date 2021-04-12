@@ -1,0 +1,56 @@
+/*Centralizando todos os textos da página*/
+* {
+    text-align: center;
+}
+
+/*Centralizando a imagem de fundo*/
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-image: url('https://static-wp-tor15-prd.torcedores.com/wp-content/uploads/2020/10/libertadores-524x338.png');
+    background-color: #111;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*A tabela ocupa quase 100% da tela*/
+table {
+    width:100%;
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+
+h2 {
+    color: white;
+}
+
+/*Colocando bordas brancas no cabeçário e células da tabela*/
+th, tr, td {
+    width: 5rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border: solid 1px white;
+    color: rgb(255, 253, 253);
+}
+
+/*Fazendo o apontamento dos botões de vitória, empate e derrota*/
+table button{
+    width: 5rem;
+    height: auto;
+    cursor: pointer;
+    font-size: 1.3rem;
+    background: #F8F8FF;
+    opacity: 0.85;
+    border-radius: 5px;
+    border: none;
+}
+
+/*Ao passar o mouse sobre os botões de vitória, empate e derrota sua cor fica menos opaca*/
+table button:hover{
+    opacity: 1;
+}
+
+/*Tirando a borda preta (padrão) dos botões ao clicar neles*/
+table button:focus{
+    outline: none;
+}
